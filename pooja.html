@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sri Thulasibaba Mutt Pooja Timings - Daily darshan schedule, Vedic yajna, and special homa bookings.">
+    <title>Pooja Timings | Sri Thulasibaba Mutt</title>
+    <link rel="icon" type="image/png" href="images/logo_circle.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <img src="images/logo.jpg" alt="Mutt Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="mutt-name" data-translate="nav_logo">Sri Thulasibaba Mutt</span>
+                    <span class="mutt-loc" data-translate="nav_location">Rameswaram</span>
+                </div>
+            </a>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-translate="nav_home">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-translate="nav_about">About</a></li>
+                    <li><a href="thulasibaba.html" class="nav-link" data-translate="nav_thulasibaba">Thulasibaba</a></li>
+                    <li><a href="pooja.html" class="nav-link active" data-translate="nav_pooja">Pooja Timings</a></li>
+                    <li><a href="media.html" class="nav-link" data-translate="nav_media">Media</a></li>
+                    <li><a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="lang-switcher">
+                <button class="lang-selected-btn">
+                    <i class="fa-solid fa-language"></i> <span id="current-lang-label">English</span> <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="lang-dropdown">
+                    <li data-lang="en">English</li>
+                    <li data-lang="ta">தமிழ் (Tamil)</li>
+                    <li data-lang="hi">हिन्दी (Hindi)</li>
+                    <li data-lang="te">తెలుగు (Telugu)</li>
+                    <li data-lang="kn">ಕನ್ನಡ (Kannada)</li>
+                    <li data-lang="ml">മലയാളം (Malayalam)</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="page-banner-content">
+                <h1 data-translate="pooja_title">Pooja Timings</h1>
+                <p data-translate="pooja_subtitle">Daily darshan hours and sacred rituals performed at the shrine.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Pooja Timings Content Section -->
+        <section id="pooja-timings" class="section-padding pooja-section">
+            <div class="container">
+                <div class="mutt-timings-grid">
+                    <!-- Daily Darshan Table -->
+                    <div class="timing-card main-timings">
+                        <h3 class="card-inner-title"><i class="fa-regular fa-clock"></i> <span data-translate="pooja_daily_schedule">Daily Schedule</span></h3>
+                        <div class="status-indicator live" id="live-indicator">
+                            <span class="dot"></span> <span id="live-status-text" data-translate="pooja_live_open">Mutt is Open for Darshan</span>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="timing-table">
+                                <thead>
+                                    <tr>
+                                        <th data-translate="pooja_header_ritual">Ritual / Event</th>
+                                        <th data-translate="pooja_header_time">Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <strong data-translate="pooja_morning_name">Morning Darshan & Aarti</strong>
+                                            <span class="ritual-desc" data-translate="pooja_morning_desc">Daily morning prayer and offerings.</span>
+                                        </td>
+                                        <td class="time-highlight">06:00 AM - 07:30 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong data-translate="pooja_yajna_name">Daily Yajna / Homa</strong>
+                                            <span class="ritual-desc" data-translate="pooja_yajna_desc">Vedic fire ritual performed for world peace.</span>
+                                        </td>
+                                        <td class="time-highlight">10:00 AM - 12:00 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <strong data-translate="pooja_evening_name">Bhajan & Evening Aarti</strong>
+                                            <span class="ritual-desc" data-translate="pooja_evening_desc">Devotional singing and lamp offerings.</span>
+                                        </td>
+                                        <td class="time-highlight">05:30 PM - 06:30 PM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Custom Sankalpam Info -->
+                    <div class="timing-card secondary-info">
+                        <div class="timing-info-block">
+                            <i class="fa-solid fa-hands-praying icon-large"></i>
+                            <h3 data-translate="pooja_sankalpam_title">Special Sankalpam</h3>
+                            <p data-translate="pooja_sankalpam_text">Perform special Yajnas (Homas) for your family’s welfare on birthdays, wedding anniversaries, or in memory of ancestors. Provide your Name, Nakshatra (Star), and Gothram for personalized prayers.</p>
+                            <a href="contact.html" class="btn btn-secondary btn-full" data-translate="pooja_book_sankalpam">Request Sankalpam</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-col">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-gopuram"></i>
+                        <span data-translate="footer_mutt_title">Sri Thulasibaba Mutt</span>
+                    </div>
+                    <p data-translate="footer_desc">A sacred center of sanity, devotional service, and Vedic legacy in the holy island of Rameswaram.</p>
+                </div>
+                <div class="footer-col links-col">
+                    <h4 data-translate="footer_quick_links">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="nav_home">Home</a></li>
+                        <li><a href="about.html" data-translate="nav_about">About</a></li>
+                        <li><a href="thulasibaba.html" data-translate="nav_thulasibaba">Thulasibaba</a></li>
+                        <li><a href="pooja.html" data-translate="nav_pooja">Pooja Timings</a></li>
+                        <li><a href="media.html" data-translate="nav_media">Media</a></li>
+                        <li><a href="contact.html" data-translate="nav_contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-col">
+                    <h4 data-translate="footer_reach_us">Reach Us</h4>
+                    <p><i class="fa-solid fa-phone"></i> 8925062124</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Rameswaram, TN 623526</p>
+                    <p><i class="fa-regular fa-clock"></i> 6:00 AM - 6:30 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <marquee behavior="scroll" direction="left" scrollamount="4" style="color: var(--text-muted); font-size: 0.9rem; font-family: var(--font-body); opacity: 0.8;">
+                    &copy; 2026 <span data-translate="footer_copyright">Sri Thulasibaba Mutt, Rameswaram. All Rights Reserved.</span> | This website was created by Heptogenix solutions
+                </marquee>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

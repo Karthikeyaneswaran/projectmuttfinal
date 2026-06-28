@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sri Thulasibaba Mutt Rameswaram - A sacred spiritual centre serving devotees for over 250 years. Experience the divine presence of Sri Panchamukha Hanuman, float stones, and daily yajnas.">
+    <title>Sri Thulasibaba Mutt | Rameswaram</title>
+    <link rel="icon" type="image/png" href="images/logo_circle.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <img src="images/logo.jpg" alt="Mutt Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="mutt-name" data-translate="nav_logo">Sri Thulasibaba Mutt</span>
+                    <span class="mutt-loc" data-translate="nav_location">Rameswaram</span>
+                </div>
+            </a>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link active" data-translate="nav_home">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-translate="nav_about">About</a></li>
+                    <li><a href="thulasibaba.html" class="nav-link" data-translate="nav_thulasibaba">Thulasibaba</a></li>
+                    <li><a href="pooja.html" class="nav-link" data-translate="nav_pooja">Pooja Timings</a></li>
+                    <li><a href="media.html" class="nav-link" data-translate="nav_media">Media</a></li>
+                    <li><a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="lang-switcher">
+                <button class="lang-selected-btn">
+                    <i class="fa-solid fa-language"></i> <span id="current-lang-label">English</span> <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="lang-dropdown">
+                    <li data-lang="en">English</li>
+                    <li data-lang="ta">தமிழ் (Tamil)</li>
+                    <li data-lang="hi">हिन्दी (Hindi)</li>
+                    <li data-lang="te">తెలుగు (Telugu)</li>
+                    <li data-lang="kn">ಕನ್ನಡ (Kannada)</li>
+                    <li data-lang="ml">മലയാളം (Malayalam)</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content">
+                <span class="welcome-text fade-in" data-translate="hero_welcome">Welcome to the Abode of Peace</span>
+                <h1 class="hero-title fade-in" data-translate="hero_title">Sri Thulasibaba Mutt</h1>
+                <p class="hero-subtitle fade-in" data-translate="hero_subtitle">Spreading divine light, devotion, and hospitality for over 250 years in Rameswaram.</p>
+                <div class="hero-actions fade-in">
+                    <a href="pooja.html" class="btn btn-primary" data-translate="hero_cta_pooja">View Pooja Timings</a>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#explore"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+        </section>
+
+        <!-- Explore Mutt Grid Section -->
+        <section id="explore" class="explore-mutt-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" data-translate="nav_logo">Sri Thulasibaba Mutt</h2>
+                    <p class="section-subtitle" data-translate="hero_subtitle">Spreading divine light, devotion, and hospitality for over 250 years in Rameswaram.</p>
+                </div>
+
+                <div class="explore-grid">
+                    <!-- About Card -->
+                    <div class="explore-card">
+                        <div class="explore-card-top">
+                            <div class="explore-icon-wrapper">
+                                <i class="fa-solid fa-gopuram"></i>
+                            </div>
+                            <h3 data-translate="nav_about">About Us</h3>
+                            <p data-translate="about_subtitle">Our 250-year heritage of spiritual guidance and community welfare.</p>
+                        </div>
+                        <a href="about.html" class="btn btn-secondary btn-full" data-translate="read_more">Read More</a>
+                    </div>
+
+                    <!-- Tradition Card -->
+                    <div class="explore-card">
+                        <div class="explore-card-top">
+                            <div class="explore-icon-wrapper">
+                                <i class="fa-solid fa-om"></i>
+                            </div>
+                            <h3 data-translate="nav_thulasibaba">Thulasibaba Tradition</h3>
+                            <p data-translate="thula_subtitle">The spiritual teachings of Rama Namam and the historic relics of the mutt.</p>
+                        </div>
+                        <a href="thulasibaba.html" class="btn btn-secondary btn-full" data-translate="read_more">Read More</a>
+                    </div>
+
+                    <!-- Pooja Card -->
+                    <div class="explore-card">
+                        <div class="explore-card-top">
+                            <div class="explore-icon-wrapper">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <h3 data-translate="nav_pooja">Pooja Timings</h3>
+                            <p data-translate="pooja_subtitle">Daily darshan hours and sacred rituals performed at the shrine.</p>
+                        </div>
+                        <a href="pooja.html" class="btn btn-secondary btn-full" data-translate="read_more">Read More</a>
+                    </div>
+
+                    <!-- Media Card -->
+                    <div class="explore-card">
+                        <div class="explore-card-top">
+                            <div class="explore-icon-wrapper">
+                                <i class="fa-solid fa-images"></i>
+                            </div>
+                            <h3 data-translate="nav_media">Media Gallery</h3>
+                            <p data-translate="media_subtitle">Glimpses of daily rituals, festivals, and sacred artifacts.</p>
+                        </div>
+                        <a href="media.html" class="btn btn-secondary btn-full" data-translate="read_more">Read More</a>
+                    </div>
+
+                    <!-- Contact Card -->
+                    <div class="explore-card">
+                        <div class="explore-card-top">
+                            <div class="explore-icon-wrapper">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <h3 data-translate="nav_contact">Contact Us</h3>
+                            <p data-translate="contact_subtitle">Visit us in person or reach out to us for special puja arrangements.</p>
+                        </div>
+                        <a href="contact.html" class="btn btn-secondary btn-full" data-translate="read_more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-col">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-gopuram"></i>
+                        <span data-translate="footer_mutt_title">Sri Thulasibaba Mutt</span>
+                    </div>
+                    <p data-translate="footer_desc">A sacred center of sanity, devotional service, and Vedic legacy in the holy island of Rameswaram.</p>
+                </div>
+                <div class="footer-col links-col">
+                    <h4 data-translate="footer_quick_links">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="nav_home">Home</a></li>
+                        <li><a href="about.html" data-translate="nav_about">About</a></li>
+                        <li><a href="thulasibaba.html" data-translate="nav_thulasibaba">Thulasibaba</a></li>
+                        <li><a href="pooja.html" data-translate="nav_pooja">Pooja Timings</a></li>
+                        <li><a href="media.html" data-translate="nav_media">Media</a></li>
+                        <li><a href="contact.html" data-translate="nav_contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-col">
+                    <h4 data-translate="footer_reach_us">Reach Us</h4>
+                    <p><i class="fa-solid fa-phone"></i> 8925062124</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Rameswaram, TN 623526</p>
+                    <p><i class="fa-regular fa-clock"></i> 6:00 AM - 6:30 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <marquee behavior="scroll" direction="left" scrollamount="4" style="color: var(--text-muted); font-size: 0.9rem; font-family: var(--font-body); opacity: 0.8;">
+                    &copy; 2026 <span data-translate="footer_copyright">Sri Thulasibaba Mutt, Rameswaram. All Rights Reserved.</span> | This website was created by Heptogenix solutions
+                </marquee>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

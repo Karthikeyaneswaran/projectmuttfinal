@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sri Thulasibaba Mutt Media Gallery - Sacred video darshans, photos of daily rituals, and holy artifacts.">
+    <title>Media Gallery | Sri Thulasibaba Mutt</title>
+    <link rel="icon" type="image/png" href="images/logo_circle.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo-area">
+                <img src="images/logo.jpg" alt="Mutt Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="mutt-name" data-translate="nav_logo">Sri Thulasibaba Mutt</span>
+                    <span class="mutt-loc" data-translate="nav_location">Rameswaram</span>
+                </div>
+            </a>
+
+            <!-- Mobile Hamburger Menu Button -->
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="nav-link" data-translate="nav_home">Home</a></li>
+                    <li><a href="about.html" class="nav-link" data-translate="nav_about">About</a></li>
+                    <li><a href="thulasibaba.html" class="nav-link" data-translate="nav_thulasibaba">Thulasibaba</a></li>
+                    <li><a href="pooja.html" class="nav-link" data-translate="nav_pooja">Pooja Timings</a></li>
+                    <li><a href="media.html" class="nav-link active" data-translate="nav_media">Media</a></li>
+                    <li><a href="contact.html" class="nav-link" data-translate="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Language Switcher -->
+            <div class="lang-switcher">
+                <button class="lang-selected-btn">
+                    <i class="fa-solid fa-language"></i> <span id="current-lang-label">English</span> <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="lang-dropdown">
+                    <li data-lang="en">English</li>
+                    <li data-lang="ta">தமிழ் (Tamil)</li>
+                    <li data-lang="hi">हिन्दी (Hindi)</li>
+                    <li data-lang="te">తెలుగు (Telugu)</li>
+                    <li data-lang="kn">ಕನ್ನಡ (Kannada)</li>
+                    <li data-lang="ml">മലയാളം (Malayalam)</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="page-banner-content">
+                <h1 data-translate="media_title">Media Gallery</h1>
+                <p data-translate="media_subtitle">Glimpses of daily rituals, festivals, and sacred artifacts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Media Gallery Section -->
+        <section id="media" class="section-padding bg-cream media-section">
+            <div class="container">
+                <!-- Video Devotional Section -->
+                <div class="video-section-wrapper" style="max-width: 800px; margin: 0 auto 60px auto; text-align: center;">
+                    <h3 class="subsection-title" style="margin-bottom: 25px; font-size: 1.8rem;" data-translate="video_section_title">Divine Video Darshan</h3>
+                    <div class="video-responsive" id="video-container-inner">
+                        <!-- Cover Image and Play Button -->
+                        <div class="video-cover" style="background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.35)), url('https://img.youtube.com/vi/ivN0j1Nxzy8/hqdefault.jpg');" onclick="playMuttVideo()">
+                            <div class="play-btn-circle">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fallback Link/Button for YouTube app or local browser issues -->
+                    <a href="https://youtu.be/ivN0j1Nxzy8" target="_blank" class="btn btn-secondary btn-sm" style="margin-top: 20px; display: inline-flex; align-items: center; gap: 8px;" data-translate="watch_on_youtube">
+                        <i class="fa-brands fa-youtube" style="color: #FF0000; font-size: 1.2rem;"></i> Watch on YouTube
+                    </a>
+                </div>
+
+                <!-- Gallery Category Filters -->
+                <div class="gallery-filters" style="margin-bottom: 40px; text-align: center; display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+                    <button class="filter-btn active" data-filter="all" data-translate="media_filter_all">All</button>
+                    <button class="filter-btn" data-filter="rituals" data-translate="media_filter_rituals">Rituals & Yajna</button>
+                    <button class="filter-btn" data-filter="deities" data-translate="media_filter_deity">Shrines & Deities</button>
+                    <button class="filter-btn" data-filter="relics" data-translate="media_filter_relics">Sacred Relics</button>
+                </div>
+
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="rituals" data-gallery-id="yajna">
+                        <div class="gallery-image-box">
+                            <img src="images/yajna_vintage_2.jpg" alt="Vedic Yajna">
+                            <div class="gallery-overlay">
+                                <h4 data-translate="gallery_yajna_title">Vedic Yajna</h4>
+                                <p data-translate="gallery_yajna_desc">Daily fire offerings for peace and health.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="deities" data-gallery-id="hanuman">
+                        <div class="gallery-image-box">
+                            <img src="images/hanuman_2.jpg" alt="Panchamukha Hanuman">
+                            <div class="gallery-overlay">
+                                <h4 data-translate="gallery_hanuman_title">Panchamukha Hanuman</h4>
+                                <p data-translate="gallery_hanuman_desc">The magnificent five-faced guardian deity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="relics" data-gallery-id="floating-stone">
+                        <div class="gallery-image-box">
+                            <img src="images/relic_vintage_3.jpg" alt="Sethu Floating Stone">
+                            <div class="gallery-overlay">
+                                <h4 data-translate="gallery_stone_title">Sethu Floating Stone</h4>
+                                <p data-translate="gallery_stone_desc">Floating stone preserved from Rama Sethu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mutt" data-gallery-id="mutt">
+                        <div class="gallery-image-box">
+                            <img src="images/mutt_1.jpg" alt="Sri Thulasibaba Mutt">
+                            <div class="gallery-overlay">
+                                <h4 data-translate="gallery_mutt_title">Sri Thulasibaba Mutt</h4>
+                                <p data-translate="gallery_mutt_desc">Glimpses of the Mutt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col about-col">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-gopuram"></i>
+                        <span data-translate="footer_mutt_title">Sri Thulasibaba Mutt</span>
+                    </div>
+                    <p data-translate="footer_desc">A sacred center of sanity, devotional service, and Vedic legacy in the holy island of Rameswaram.</p>
+                </div>
+                <div class="footer-col links-col">
+                    <h4 data-translate="footer_quick_links">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="nav_home">Home</a></li>
+                        <li><a href="about.html" data-translate="nav_about">About</a></li>
+                        <li><a href="thulasibaba.html" data-translate="nav_thulasibaba">Thulasibaba</a></li>
+                        <li><a href="pooja.html" data-translate="nav_pooja">Pooja Timings</a></li>
+                        <li><a href="media.html" data-translate="nav_media">Media</a></li>
+                        <li><a href="contact.html" data-translate="nav_contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col contact-col">
+                    <h4 data-translate="footer_reach_us">Reach Us</h4>
+                    <p><i class="fa-solid fa-phone"></i> 8925062124</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Rameswaram, TN 623526</p>
+                    <p><i class="fa-regular fa-clock"></i> 6:00 AM - 6:30 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <marquee behavior="scroll" direction="left" scrollamount="4" style="color: var(--text-muted); font-size: 0.9rem; font-family: var(--font-body); opacity: 0.8;">
+                    &copy; 2026 <span data-translate="footer_copyright">Sri Thulasibaba Mutt, Rameswaram. All Rights Reserved.</span> | This website was created by Heptogenix solutions
+                </marquee>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="gallery-lightbox" class="lightbox-modal" aria-hidden="true" role="dialog">
+        <span class="lightbox-close" aria-label="Close lightbox">&times;</span>
+        <div class="lightbox-content">
+            <div class="lightbox-slide-container">
+                <img id="lightbox-img" src="" alt="">
+            </div>
+            <button class="lightbox-prev" aria-label="Previous image">&#10094;</button>
+            <button class="lightbox-next" aria-label="Next image">&#10095;</button>
+            <div class="lightbox-caption-container">
+                <h4 id="lightbox-title"></h4>
+                <p id="lightbox-desc"></p>
+            </div>
+            <div class="lightbox-counter">
+                <span id="lightbox-current">1</span> / <span id="lightbox-total">1</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
